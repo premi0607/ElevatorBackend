@@ -9,5 +9,6 @@ namespace ElevatorTransaction.Data
         {
         }
         public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<LiftConfiguration> LiftConfiguration { get; set; }
     }
 }
