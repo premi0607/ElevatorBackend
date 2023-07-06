@@ -20,6 +20,9 @@ namespace ElevatorTransaction.Controllers
         public async Task<IActionResult> GetAllDetails()
         {
             var LiftConfig = await _liftconfig.LiftConfiguration.ToListAsync();
+
+
+
             return Ok(LiftConfig);
         }
 

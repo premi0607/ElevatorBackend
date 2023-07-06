@@ -1,5 +1,7 @@
 ﻿using ElevatorTransaction.Models;
+using ElevatorTransaction.Models.Converter;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Hosting;
 
 namespace ElevatorTransaction.Data
 {
@@ -11,4 +13,5 @@ namespace ElevatorTransaction.Data
         public DbSet<Transaction> Transactions { get; set; }
         public DbSet<LiftConfiguration> LiftConfiguration { get; set; }
     }
+
 }
